@@ -5,14 +5,14 @@ public class Generator {
         Random rand = new Random();
         Integer[] tab = new Integer[n];
         for (int i = 0; i < n; i++) {
-            tab[i] = rand.nextInt(n*10);
+            tab[i] = rand.nextInt();
         }
         return tab;
     }
     public static Integer[] generateDesc(int n){
         Integer[] tab = new Integer[n];
         for (int i = 0; i < n; i++) {
-            tab[i] = n-i;
+            tab[i] = n-(i+1);
         }
         return tab;
 

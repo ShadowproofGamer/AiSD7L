@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         NaturalComp nc = new NaturalComp();
@@ -44,7 +46,9 @@ public class Main {
     }
     public static void execute(ArraySorter<Integer> sorter, Integer[] arr){
         long start = System.currentTimeMillis();
-        sorter.sort(arr);
+        //System.out.println(Arrays.toString(
+                sorter.sort(arr);
+        //));
         long stop = System.currentTimeMillis();
         System.out.println(sorter.getClass()+" time to process: "+(stop-start));
     }
